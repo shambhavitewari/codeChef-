@@ -1,0 +1,42 @@
+
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Codechef
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+	   
+	    List<Integer> inputInt =new ArrayList<>();
+	    Scanner scanner = new Scanner (System.in);  
+	while (scanner.hasNextInt()) {  
+             
+                   inputInt.add(scanner.nextInt());
+             
+          }  
+          scanner.close();
+          
+         int n=inputInt.get(0);
+         int h=inputInt.get(1);
+         int x=inputInt.get(2);
+         
+         for(int i=3;i<inputInt.size();i++)
+         {
+             if((inputInt.get(i)+x)==h)
+             {
+                 System.out.println("yes");
+                 return;
+             }
+         }
+         
+         System.out.println("no");
+         
+          
+          
+    }  
+		
+}
+
